@@ -1,8 +1,9 @@
 package ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Colorable_cho_cac_lop_hinh_hoc.Iplm;
 
-import ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Colorable_cho_cac_lop_hinh_hoc.Resizeable;
+import ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Colorable_cho_cac_lop_hinh_hoc.Colorable;
+import ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Resizeable_cho_cac_lop_hinh_hoc.Resizeable;
 
-public abstract class Shape implements Resizeable {
+public abstract class Shape implements Colorable {
     private String color = "green";
     private boolean filled = true;
 
@@ -31,15 +32,15 @@ public abstract class Shape implements Resizeable {
     }
 
     public abstract double getArea();
+    public abstract double getPerimeter();
 
-    @Override//interface cua Resizeable...
-    public void resize(double percent) {
 
-    }
+
 
     @Override
     public String toString() {
-        return " Shape có màu là " + getColor() + " và " + (isFilled() ? " được tô kín " : " không được tô " + "\n");
+        return " Shape: " +
+                " color= " + color +
+                " filled= " + filled;
     }
-
 }

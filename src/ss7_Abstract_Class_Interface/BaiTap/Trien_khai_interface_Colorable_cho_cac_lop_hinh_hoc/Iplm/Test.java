@@ -1,29 +1,33 @@
 package ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Colorable_cho_cac_lop_hinh_hoc.Iplm;
 
-
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Nhập vào x");
-        int x = Integer.parseInt(input.nextLine());
-        System.out.println("Nhập vào y");
-        int y = Integer.parseInt(input.nextLine());
+        Scanner scanner =new Scanner(System.in);
+
+        System.out.println("Nhập bán kính");
+        double radius = Double.parseDouble(scanner.nextLine());
+
+        System.out.println("Nhập chiều rộng");
+        double width = Double.parseDouble(scanner.nextLine());
+        System.out.println("Nhập dài");
+        double height = Double.parseDouble(scanner.nextLine());
+
+        System.out.println("Nhập cạnh hình vuông");
+        double side = Double.parseDouble(scanner.nextLine());
+
         Shape[] shapes = new Shape[3];
-        shapes[0] = new Circle(x);
-        shapes[1] = new Rectangle(x,y);
-        shapes[2] = new Square(x);
-        for (Shape shape : shapes) {
-            System.out.println("Diện trước khi thay dổi " + shape.getArea() + "\n");
-        }
+        shapes[0] = new Circle("green",true,radius);
+        shapes[1] = new Rectangle("red",false,width,height);
+        shapes[2] = new Square("black",true,side);
 
-        for (Shape shape : shapes) {
-            shape.resize(Math.random() * 100);
+        for (Shape shape: shapes) {
+            System.out.println("Thông tin của khối "+shape+"\n");
+            System.out.println("Diện tích: "+shape.getArea()+"\n");
+            System.out.println("Chu vi: "+shape.getPerimeter()+"\n");
+               shape.howToColor("red");
+            System.out.println("Chuyển đổi thông tin của khối "+shape);
         }
-        for (Shape a : shapes) {
-            System.out.println("Diện tích sau khi thay đổi " + a.getArea() + "\n");
-        }
-
     }
 }
