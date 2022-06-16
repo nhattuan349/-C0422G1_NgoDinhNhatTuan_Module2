@@ -1,6 +1,6 @@
 package ss7_Abstract_Class_Interface.ThucHanh.Comparator;
 
-import ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Resizeable_cho_cac_lop_hinh_hoc.Ipml.Circle;
+import ss7_Abstract_Class_Interface.BaiTap.Trien_khai_interface_Resizeable_cho_cac_lop_hinh_hoc.Model.Circle;
 
 import java.util.Arrays;
 import java.util.Comparator;
