@@ -1,4 +1,4 @@
-package ss11StackQueue.BaiTap.KiemTraChuoiPalindromeSuDungQueue;
+package ss11_DSA_Stack_Queue.BaiTap.KiemTraChuoiPalindromeSuDungQueue;
 
 import java.util.*;
 

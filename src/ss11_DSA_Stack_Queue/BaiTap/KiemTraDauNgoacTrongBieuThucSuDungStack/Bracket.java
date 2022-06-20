@@ -1,4 +1,4 @@
-package ss11StackQueue.BaiTap.KiemTraDauNgoacTrongBieuThucSuDungStack;
+package ss11_DSA_Stack_Queue.BaiTap.KiemTraDauNgoacTrongBieuThucSuDungStack;
 
 import java.util.Scanner;
 import java.util.Stack;

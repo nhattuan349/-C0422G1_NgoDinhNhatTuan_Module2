@@ -1,4 +1,4 @@
-package ss11StackQueue.BaiTap.ChuyenDoiTuHeThapPhanSangHeNhiPhan;
+package ss11_DSA_Stack_Queue.BaiTap.ChuyenDoiTuHeThapPhanSangHeNhiPhan;
 
 import java.util.Scanner;
 import java.util.Stack;
