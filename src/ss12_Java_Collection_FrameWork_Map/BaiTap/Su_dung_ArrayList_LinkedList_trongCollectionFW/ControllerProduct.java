@@ -14,7 +14,7 @@ public class ControllerProduct {
                     "4. Hiển thị danh sách sản phẩm \n" +
                     "5. Tìm kiếm sản phẩm theo tên \n" +
                     "6. Sắp xếp sản phẩm giảm dần theo giá \n" +
-                    "6. Sắp xếp sản phẩm tăng dần theo giá\n" +
+                    "7. Sắp xếp sản phẩm tăng dần theo giá\n" +
                     "0. Exit \n");
             System.out.println("Xin mời chọn chức năng: ");
             int input = Integer.parseInt(scanner.nextLine());
