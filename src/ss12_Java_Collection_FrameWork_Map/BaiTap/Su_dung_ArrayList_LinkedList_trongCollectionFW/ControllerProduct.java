@@ -49,6 +49,7 @@ public class ControllerProduct {
                     break;
                 case 0:
                     System.out.println("Thoát chương trình: ");
+                    System.exit(0);
                     break;
             }
         } while (true);
