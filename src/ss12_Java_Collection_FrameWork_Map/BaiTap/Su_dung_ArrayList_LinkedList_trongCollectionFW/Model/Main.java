@@ -1,8 +1,9 @@
-package ss12_Java_Collection_FrameWork_Map.BaiTap.Su_dung_ArrayList_LinkedList_trongCollectionFW;
+package ss12_Java_Collection_FrameWork_Map.BaiTap.Su_dung_ArrayList_LinkedList_trongCollectionFW.Model;
+
+import ss12_Java_Collection_FrameWork_Map.BaiTap.Su_dung_ArrayList_LinkedList_trongCollectionFW.Model.SanPham;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main extends SanPham {

@@ -1,4 +1,4 @@
-package ss12_Java_Collection_FrameWork_Map.BaiTap.Su_dung_ArrayList_LinkedList_trongCollectionFW;
+package ss12_Java_Collection_FrameWork_Map.BaiTap.Su_dung_ArrayList_LinkedList_trongCollectionFW.Model;
 
 import java.util.Comparator;
 
