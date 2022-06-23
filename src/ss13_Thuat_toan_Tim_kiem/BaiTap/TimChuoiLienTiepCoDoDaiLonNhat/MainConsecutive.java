@@ -14,7 +14,7 @@ public class MainConsecutive {
 
         for (int i = 0; i < string.length(); i++) {
             if (list.size()>1&&
-                    string.charAt(i)<= list.getLast()&&
+                    string.charAt(i)<= list.getLast()&&// getLast Lấy ra phần tửu cuối cùng của List
                     list.contains(string.charAt(i))) {
                 list.clear();
             }

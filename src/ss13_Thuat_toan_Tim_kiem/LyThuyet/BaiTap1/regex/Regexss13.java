@@ -45,7 +45,7 @@ public class Regexss13 {
      * "Nhập địa chỉ :  "
      */
     public static boolean formatDiachi(String str) {
-        final String VALID_NUMBER = "^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõ" +
+        final String VALID_NUMBER = "^[0-9a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõ" +
                 "ùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢ" +
                 "ỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\\s\\W|_]+$";
         Pattern pattern = Pattern.compile(VALID_NUMBER);
@@ -65,6 +65,24 @@ public class Regexss13 {
      * "Nhập số Số tiền Sản Phẩm :  "
      */
     public static boolean formatMoneySP(String str) {
+        final String VALID_NUMBER = "^[0-9]*[0-9]$";
+        Pattern pattern = Pattern.compile(VALID_NUMBER);
+        return pattern.matcher(str).matches();
+    }
+
+    /**
+     * "Nhập số Lương cơ bản :  "
+     */
+    public static boolean formatLuongCoBan(String str) {
+        final String VALID_NUMBER = "^[0-9]*[0-9]$";
+        Pattern pattern = Pattern.compile(VALID_NUMBER);
+        return pattern.matcher(str).matches();
+    }
+
+    /**
+     * "Nhập số Hẹ Số lương:  "
+     */
+    public static boolean formatHesoLuong(String str) {
         final String VALID_NUMBER = "^[0-9]*[0-9]$";
         Pattern pattern = Pattern.compile(VALID_NUMBER);
         return pattern.matcher(str).matches();
